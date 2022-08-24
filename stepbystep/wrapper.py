@@ -1,22 +1,14 @@
 from .tracer import Tracer
 import sys
 
-def stepbystep(func):
-  def wrapper(*args, **kwargs):
+def stepbystep_wrapper(time_between_steps=0.5):
 
-    print(Tracer._CLEAR_SCREEN)
-
-    Tracer.watch(func)
-    
-    print("enter")
-    #pdb.runcall(func, *args, **kwargs)
-    sys.stdout.flush()
-    
-    func(*args, **kwargs)
-    # current_level = 0
-# 		source = inspect.getsource(func)
-# 		source_lines = source.split("\n")
-# 		for line in source_lines:
-# 			print(line)
+  def Inner(func):
   
-  return wrapper
+    def wrapper(*args, **kwargs):
+      Tracer.watch(func)
+      Tracer.setTimeBetweenSteps(time_between_steps)
+      sys.stdout.flush()
+      func(*args, **kwargs)
+    return wrapper
+  return Inner

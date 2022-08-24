@@ -7,7 +7,7 @@ def sum(n1, n2):
   suma = n1 + n2
   return suma
 
-@stepbystep_wrapper
+@stepbystep_wrapper(time_between_steps=0.5)
 def bubbleSort(array, *args):
   size = len(array)
   for i in range(size):
