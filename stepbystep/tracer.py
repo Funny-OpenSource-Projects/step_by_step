@@ -7,7 +7,9 @@ class Tracer:
 
   _FOREGROUND_YELLOW = '\x1b[33m'
   _FOREGROUND_RED = '\x1b[31m'
+  _FOREGROUND_LIGHT_RED = '\x1b[91m'
   _FOREGROUND_CYAN = '\x1b[36m'
+  _FOREGROUND_LIGHT_CYAN = '\x1b[96m'
   _CLEAR_SCREEN = '\x1b[2J'
   _STYLE_RESET_ALL = '\x1b[0m'
 
@@ -64,7 +66,7 @@ class Tracer:
 
     variables = frame.f_locals.items()
     for i_variable in variables:
-      print(Tracer._FOREGROUND_CYAN + i_variable[0] + ": " + Tracer._FOREGROUND_RED + str(i_variable[1]) + Tracer._STYLE_RESET_ALL)
+      print(Tracer._FOREGROUND_LIGHT_CYAN + i_variable[0] + ": " + Tracer._FOREGROUND_LIGHT_RED + str(i_variable[1]) + Tracer._STYLE_RESET_ALL)
 
     time.sleep(Tracer.time_between_steps)
     

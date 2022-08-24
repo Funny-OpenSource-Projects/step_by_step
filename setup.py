@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="stepbystep",
-    version="1.0.3",
+    version="1.0.5",
     author="Joel Ibaceta",
     author_email="mail@joelibaceta.com",
     license='MIT',
