@@ -1,10 +1,9 @@
+<br/>
 <div align=center>
 
 ![](docs/icon.png)
 # Step by Step
 
-
-<br/><br/>
 
 ![](docs/screenrecording.png)
 
