@@ -1,7 +1,8 @@
 <br/>
 <div align=center>
 
-![](docs/icon.png =200x)
+<img src="docs/icon.png" width=80>
+
 # Step by Step
 
 
