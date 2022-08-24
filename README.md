@@ -3,6 +3,8 @@
 
 ![](docs/StepByStepLogo.png)
 
+![PyPI version](https://badge.fury.io/py/stepbystep.svg)
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 ![](docs/screenrecording.png)
 
