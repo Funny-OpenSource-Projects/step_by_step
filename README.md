@@ -18,13 +18,13 @@ pip install stepbystep
 
 ## Usage
 
-### 1. Copy the snippet which you want to analyze to a separate file.
+### 1. Copy the snippet which you want to analyze into a separate file.
 
 ### 2. Add the decorator to your function.
 
-To inspect your snippet step by step you should surround your snippet with `@stepbystep_wrapper` decorator.
+To inspect your snippet step by step, you should surround your snippet with `@stepbystep_wrapper` decorator.
 
-> You should specify the time intervals beetwen steps in seconds using the time_between_steps argument 
+> You should specify the time intervals between steps in seconds using the `time_between_steps` argument
 
 ```python
 
@@ -52,4 +52,4 @@ def bubbleSort(array, *args):
 python my_snippet.py
 ```
 
-Thats it, now you can run your script and enjoy the magic!
+That's it. Now you can run your script and enjoy the magic!
