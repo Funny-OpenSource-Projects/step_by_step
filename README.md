@@ -1,9 +1,7 @@
 <br/>
 <div align=center>
 
-<img src="docs/icon.png" width=80>
-
-# Step by Step
+![](docs/StepByStepLogo.png)
 
 
 ![](docs/screenrecording.png)
